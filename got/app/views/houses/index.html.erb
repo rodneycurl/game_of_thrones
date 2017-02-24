@@ -2,8 +2,5 @@
 
 <ul>
   <% @houses.each do |house| %>
-    <li>
-      <%= link_to "#{house.title} - #{house.character.name}",house_path(house) %>
-    </li>
   <% end %>
 </ul>
