@@ -1,3 +1,3 @@
 class House < ActiveRecord::Base
-  has_many: :characters
+  has_many :characters
 end
