@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 20170224171057) do
 
   create_table "houses", force: :cascade do |t|
     t.string "name"
-    t.string "logo_url"
+    t.string "house_url"
   end
 
 end
