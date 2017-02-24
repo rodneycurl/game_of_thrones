@@ -1,0 +1,9 @@
+<h2>Houses</h2>
+
+<ul>
+  <% @houses.each do |house| %>
+    <li>
+      <%= link_to "#{house.title} - #{house.character.name}",house_path(house) %>
+    </li>
+  <% end %>
+</ul>
