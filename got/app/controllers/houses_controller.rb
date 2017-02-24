@@ -1,9 +1,14 @@
 class HousesController < ApplicationController
 
-  before_action :authenticate_user!, only: [:add_favorite, :remove_favorite]
+  #before_action :authenticate_user!, only: [:add_favorite, :remove_favorite]
   # index
   def index
     @houses = House.all
+  end
+
+  #show
+  def show
+    @house = House.find(params[:id])
   end
 
   # new
@@ -18,10 +23,6 @@ class HousesController < ApplicationController
     redirect_to "/houses/#{@house.id}"
   end
 
-  #show
-  def show
-    @house = House.find(params[:id])
-  end
 
   # edit
   def edit
