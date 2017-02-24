@@ -1,0 +1,15 @@
+<h2><%= @character.name %> <a href="/characters/<%= @character.id %>/edit">(edit)</a></h2>
+<h4><%= @character.houses %></h4>
+
+<img class='character-photo' src="<%= @character.photo_url %>">
+
+<h3>Houses <%= link_to "(+)", new_character_house_path(@character) %></h3>
+<ul>
+  <% @character.houses.each do |house| %>
+    <li>
+      <%= link_to "#{house.title}", house_path(house) %>
+      <% end %>
+    </li>
+
+  <% end %>
+</ul>
