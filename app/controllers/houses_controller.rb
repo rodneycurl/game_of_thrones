@@ -1,27 +1,28 @@
 class HousesController < ApplicationController
 
-  before_action :authenticate_user!, only: [:add_favorite, :remove_favorite]
+  #before_action :authenticate_user!, only: [:add_favorite, :remove_favorite]
   # index
   def index
     @houses = House.all
-  end
-
-  # new
-  def new
-    @house = House.all
-  end
-
-  # create
-  def create
-    @house = House.create(song_params)
-
-    redirect_to "/houses/#{@house.id}"
   end
 
   #show
   def show
     @house = House.find(params[:id])
   end
+
+  # new
+  def new
+    @house = House.new
+  end
+
+  # create
+  def create
+    @house = House.create(house_params)
+
+    redirect_to "/houses/#{@house.id}"
+  end
+
 
   # edit
   def edit
@@ -31,7 +32,7 @@ class HousesController < ApplicationController
   # update
   def update
     @house = House.find(params[:id])
-    @house.update(song_params)
+    @house.update(house_params)
 
     redirect_to "/houses/#{@house.id}"
   end
@@ -57,6 +58,6 @@ class HousesController < ApplicationController
 
   private
   def house_params
-    params.require(:house).permit(:name, :house_img)
+    params.require(:house).permit(:name, :house_url)
   end
 end

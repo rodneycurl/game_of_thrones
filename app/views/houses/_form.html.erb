@@ -1,10 +1,10 @@
-<%= form_for([@house, @character]) do |f| %>
+<%= form_for(@house) do |f| %>
 
   <%= f.label :name %>
   <%= f.text_field :name %>
 
-  <%= f.label :house %>
-  <%= f.text_field :house %>
+  <%= f.label :house_url %>
+  <%= f.text_field :house_url %>
 
   <%= f.submit %>
 

@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  devise_for :users
-  root to: 'characters#index'
+  root to: 'houses#index'
 
-  resources :characters do
-  resources :houses, except: [:index]
+  resources :houses do
+    resources :characters, except: [:index]
   end
 end
