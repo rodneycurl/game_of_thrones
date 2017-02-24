@@ -3,7 +3,7 @@ class CharactersController < ApplicationController
 
   # index
   def index
-    @character = Character.all
+    @characters = Character.all
   end
 
   # new
@@ -45,6 +45,6 @@ class CharactersController < ApplicationController
 
   private
   def character_params
-    params.require(:character).permit(:name, :photo_url, :house)
+    params.require(:character).permit(:name, :character_photo, :house)
   end
 end
