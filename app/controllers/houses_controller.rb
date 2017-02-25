@@ -19,7 +19,6 @@ class HousesController < ApplicationController
   # create
   def create
     @house = House.create(house_params)
-
     redirect_to "/houses/#{@house.id}"
   end
 
@@ -41,8 +40,7 @@ class HousesController < ApplicationController
   def destroy
     @house = House.find(params[:id])
     @house.destroy
-
-    redirect_to "/songs"
+    redirect_to "/houses"
   end
 
   def add_favorite

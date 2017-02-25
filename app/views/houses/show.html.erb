@@ -1,4 +1,6 @@
 <h2><%= @house.name %> House — Characters</h2>
+<%= link_to 'Delete', @house, method: :delete %>
+<%= link_to 'Edit', edit_house_path(@house) %>
 <br>
 <% @house.characters.each do |character| %>
   <h2><%= link_to character.name, house_character_path(@house, character) %></h2>
