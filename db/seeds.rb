@@ -25,7 +25,7 @@
 # end
 #
 
-house1 = House.create(name: "Targaryen", house_url: "https://img.clipartfox.com/06ce146e81cdf14d334e69190ceb2e84_targaryan-sigil-house-targaryen-clipart_3051-3164.png")
+house1 = House.create(name: "Targaryen", house_url: "http://vignette1.wikia.nocookie.net/gameofthrones/images/1/16/House-Targaryen-heraldry.jpg/revision/latest?cb=20151004105028")
 house2 = House.create(name: "Night's Watch", house_url: "http://static.cdn.ea.com/battlelog/prod/emblems/320/717/bf3/2832655391748020717.jpeg?v=1346877342")
 house3 = House.create(name: "Stark", house_url:"https://s-media-cache-ak0.pinimg.com/736x/4a/bc/38/4abc38758eba60d6712bd86dd1542697.jpg")
 house4 = House.create(name: "Lannister", house_url:"https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012014/house_lannister.png?itok=6lVFuitE")

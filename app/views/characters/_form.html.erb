@@ -1,13 +1,10 @@
-<%= form_for(@house, @character) do |f| %>
+<%= form_for [@house, @character] do |f| %>
 
-  <%= f.label :name %>
+  <%= f.label :name, "Character Name" %>
   <%= f.text_field :name %>
 
-  <%= f.label :photo_url %>
-  <%= f.text_field :photo_url %>
-
-  <%= f.label :houses %>
-  <%= f.text_field :houses %>
+  <%= f.label :character_photo, "Character Photo" %>
+  <%= f.text_field :character_photo %>
 
   <%= f.submit %>
 

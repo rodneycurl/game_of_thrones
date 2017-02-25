@@ -8,13 +8,15 @@ class CharactersController < ApplicationController
 
   # new
   def new
-    @character = Character.new
+    @house = House.find(params[:house_id])
+    @character = @house.characters.new
   end
 
   # create
   def create
-    @character = Character.create!(artist_params)
-    redirect_to "/artists/#{@artist.id}"
+    @house = House.find(params[:house_id])
+    @character = @house.characters.create(character_params)
+    redirect_to house_character_path(@house, @character)
   end
 
   #show
@@ -26,22 +28,24 @@ class CharactersController < ApplicationController
   # edit
   def edit
     @character = Character.find(params[:id])
+    @house = House.find(@character.house_id)
   end
 
   # update
   def update
     @character = Character.find(params[:id])
     @character.update(character_params)
-
-    redirect_to "/characters/#{@character.id}"
+    @house = House.find(@character.house_id)
+    redirect_to house_character_path(@house, @character)
   end
 
   # destroy
   def destroy
     @character = Character.find(params[:id])
     @character.destroy
+    @house = House.find(@character.house_id)
 
-    redirect_to "/characters"
+    redirect_to house_path(@house)
   end
 
   private

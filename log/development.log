@@ -3998,3 +3998,2471 @@ app/views/characters/edit.html.erb:4:in `_app_views_characters_edit_html_erb__23
   Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
   Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.4ms)
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:08:23 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (0.8ms)
+  Rendered characters/edit.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/rodneycurl/wdi/labs/got/app/views/characters/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+orm_for[@house, @character] do |f| @output_buffer.safe_appen
+                              ^
+/Users/rodneycurl/wdi/labs/got/app/views/characters/_form.html.erb:16: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/characters/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/characters/_form.html.erb:16: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/characters/edit.html.erb:4:in `_app_views_characters_edit_html_erb__2334301283042849192_70170379964620'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.3ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.3ms)
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:11:56 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (50.9ms)
+  Rendered characters/edit.html.erb within layouts/application (52.1ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `character_path' for #<#<Class:0x007fa39d105778>:0x007fa39a6573a0>):
+    1: <%= form_for([@house, @character]) do |f| %>
+    2: 
+    3:   <%= f.label :name %>
+    4:   <%= f.text_field :name %>
+  
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___4580653010269802316_70170334828560'
+app/views/characters/edit.html.erb:4:in `_app_views_characters_edit_html_erb__2334301283042849192_70170323395480'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (51.3ms)
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:12:41 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (11.5ms)
+  Rendered characters/edit.html.erb within layouts/application (59.5ms)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `character_path' for #<#<Class:0x007fa39d105778>:0x007fa39d11e548>):
+    3: 
+    4: <%= render 'form' %>
+    5: 
+    6: <%= link_to 'Delete!', character_path(@character), method: :delete, class: 'delete' %>
+  
+app/views/characters/edit.html.erb:6:in `_app_views_characters_edit_html_erb__2334301283042849192_70170345797520'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.4ms)
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:19:58 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (2.5ms)
+  Rendered characters/edit.html.erb within layouts/application (46.8ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `character_path' for #<#<Class:0x007fa39d105778>:0x007fa39d033958>):
+    2: 
+    3: <%= render 'form' %>
+    4: 
+    5: <%= link_to 'Delete', [@house, @character], method: :delete %>
+  
+app/views/characters/edit.html.erb:5:in `_app_views_characters_edit_html_erb__2334301283042849192_70170345325240'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.3ms)
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:20:39 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (4.0ms)
+  Rendered characters/edit.html.erb within layouts/application (53.7ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `character_path' for #<#<Class:0x007fa39d105778>:0x007fa39b38fab8>):
+    2: 
+    3: <%= render 'form' %>
+    4: 
+    5: <!-- <%= link_to 'Delete', [@house, @character], method: :delete %> -->
+  
+app/views/characters/edit.html.erb:5:in `_app_views_characters_edit_html_erb__2334301283042849192_70170330309400'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.4ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.3ms)
+Started GET "/houses/1/characters/" for ::1 at 2017-02-25 14:20:47 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/houses/1/characters"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (8.6ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.4ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (75.1ms)
+Started GET "/houses/1/characters/" for ::1 at 2017-02-25 14:21:05 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/houses/1/characters"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (3.0ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.5ms)
+Started GET "/houses" for ::1 at 2017-02-25 14:21:09 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 14:21:11 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:21:12 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 24ms (Views: 20.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:21:16 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (0.7ms)
+  Rendered characters/edit.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/rodneycurl/wdi/labs/got/app/views/characters/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+orm_for[@house, @character] do |f| @output_buffer.safe_appen
+                              ^
+/Users/rodneycurl/wdi/labs/got/app/views/characters/_form.html.erb:16: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/characters/_form.html.erb:1: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/characters/_form.html.erb:16: syntax error, unexpected keyword_ensure, expecting end-of-input
+app/views/characters/edit.html.erb:3:in `_app_views_characters_edit_html_erb__2334301283042849192_70170380408080'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.3ms)
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:21:51 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.6ms)
+  Rendered characters/edit.html.erb within layouts/application (2.8ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (can't write unknown attribute `html`):
+    1: <%= form_for @house, @character do |f| %>
+    2: 
+    3:   <%= f.label :name %>
+    4:   <%= f.text_field :name %>
+  
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___4580653010269802316_70170381893640'
+app/views/characters/edit.html.erb:3:in `_app_views_characters_edit_html_erb__2334301283042849192_70170381927360'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.5ms)
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:24:49 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (47.9ms)
+  Rendered characters/edit.html.erb within layouts/application (49.2ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `character_path' for #<#<Class:0x007fa39d105778>:0x007fa39b4f0d08>):
+    1: <%= form_for [@house, @character] do |f| %>
+    2: 
+    3:   <%= f.label :name %>
+    4:   <%= f.text_field :name %>
+  
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___4580653010269802316_70170380850460'
+app/views/characters/edit.html.erb:3:in `_app_views_characters_edit_html_erb__2334301283042849192_70170331024260'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.4ms)
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:25:38 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (96.4ms)
+  Rendered characters/edit.html.erb within layouts/application (97.7ms)
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `character' for #<#<Class:0x007fa39d105778>:0x007fa3a12f99e0>
+Did you mean?  @character):
+    1: <%= form_for [@house, character] do |f| %>
+    2: 
+    3:   <%= f.label :name %>
+    4:   <%= f.text_field :name %>
+  
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___4580653010269802316_70170380157420'
+app/views/characters/edit.html.erb:3:in `_app_views_characters_edit_html_erb__2334301283042849192_70170380327300'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (47.5ms)
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:25:52 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (55.2ms)
+  Rendered characters/edit.html.erb within layouts/application (56.7ms)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `character_path' for #<#<Class:0x007fa39d105778>:0x007fa3a0ae0650>):
+    1: <%= form_for [@house, @character] do |f| %>
+    2: 
+    3:   <%= f.label :name %>
+    4:   <%= f.text_field :name %>
+  
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___4580653010269802316_70170380862280'
+app/views/characters/edit.html.erb:3:in `_app_views_characters_edit_html_erb__2334301283042849192_70170376079380'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (50.0ms)
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:27:26 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (50.2ms)
+  Rendered characters/edit.html.erb within layouts/application (51.6ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `character_path' for #<#<Class:0x007fa39d105778>:0x007fa3a12f9788>):
+    1: <%= form_for [@house, @character] do |f| %>
+    2: 
+    3:   <%= f.label :name %>
+    4:   <%= f.text_field :name %>
+  
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___4580653010269802316_70170380140880'
+app/views/characters/edit.html.erb:3:in `_app_views_characters_edit_html_erb__2334301283042849192_70170380337260'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.0ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (55.1ms)
+Started POST "/__web_console/repl_sessions/247999b6ee254d6ccf5f1c05c2223be5/trace" for ::1 at 2017-02-25 14:27:35 -0500
+Started POST "/__web_console/repl_sessions/247999b6ee254d6ccf5f1c05c2223be5/trace" for ::1 at 2017-02-25 14:27:38 -0500
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:31:23 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (7.0ms)
+  Rendered characters/edit.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 7.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `photo_url' for #<Character:0x007fa3a13d8b40>):
+    4:   <%= f.text_field :name %>
+    5: 
+    6:   <%= f.label :photo_url %>
+    7:   <%= f.text_field :photo_url %>
+    8: 
+    9:   <%= f.label :houses %>
+   10:   <%= f.text_field :houses %>
+  
+app/views/characters/_form.html.erb:7:in `block in _app_views_characters__form_html_erb___4580653010269802316_70170330796300'
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___4580653010269802316_70170330796300'
+app/views/characters/edit.html.erb:3:in `_app_views_characters_edit_html_erb__2334301283042849192_70170330834760'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.3ms)
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:32:14 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/_form.html.erb (4.0ms)
+  Rendered characters/edit.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 28ms (Views: 24.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:32:34 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.4ms)
+  Rendered characters/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:34:57 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.4ms)
+  Rendered characters/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 16ms (Views: 13.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:01 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.5ms)
+  Rendered characters/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:15 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.3ms)
+  Rendered characters/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:21 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.6ms)
+  Rendered characters/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 17ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:32 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.9ms)
+  Rendered characters/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:34 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.5ms)
+  Rendered characters/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:41 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.3ms)
+  Rendered characters/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 17ms (Views: 14.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:42 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.6ms)
+  Rendered characters/edit.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:43 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (1.1ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (3.3ms)
+  Rendered characters/edit.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 35ms (Views: 29.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:43 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (4.7ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.6ms)
+  Rendered characters/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 33ms (Views: 25.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:43 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.3ms)
+  Rendered characters/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:44 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (3.2ms)
+  Rendered characters/edit.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 40ms (Views: 36.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:44 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.7ms)
+  Rendered characters/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 25ms (Views: 20.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:44 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.8ms)
+  Rendered characters/edit.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:44 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (2.2ms)
+  Rendered characters/edit.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:45 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.3ms)
+  Rendered characters/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:35:54 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.3ms)
+  Rendered characters/edit.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 17ms (Views: 14.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:36:01 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.8ms)
+  Rendered characters/edit.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:36:14 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.5ms)
+  Rendered characters/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:37:09 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.5ms)
+  Rendered characters/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 22ms (Views: 19.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:37:21 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.1ms)
+  Rendered characters/edit.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:38:03 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:40:15 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 25ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:40:18 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.2ms)
+  Rendered characters/edit.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/houses/1/characters/1" for ::1 at 2017-02-25 14:40:26 -0500
+Processing by CharactersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iYtBwMx0GVgr1Pf0yWqvGOmRpX8lRufi0WFi4+5y564pMqAxQq547up+hldkt0D7/El/KTJaLH0Tkq8Zzuf7Aw==", "character"=>{"name"=>"Daenerys Targaryen!", "character_photo"=>"http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/daenarys-1024.jpg"}, "commit"=>"Update Character", "house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "characters" SET "name" = $1 WHERE "characters"."id" = $2[0m  [["name", "Daenerys Targaryen!"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/houses/1/characters/1
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:40:26 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:40:30 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.3ms)
+  Rendered characters/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/houses/1/characters/1" for ::1 at 2017-02-25 14:40:33 -0500
+Processing by CharactersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7bBHVN7DTVxZEo3d8dFeG6mYKHAcYglFIVNsjleTiPpNCaalUBks6pi4/H5cDLH4vEDyJgt+wtrjoKF0dwaUVw==", "character"=>{"name"=>"Daenerys Targaryen", "character_photo"=>"http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/daenarys-1024.jpg"}, "commit"=>"Update Character", "house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "characters" SET "name" = $1 WHERE "characters"."id" = $2[0m  [["name", "Daenerys Targaryen"], ["id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/houses/1/characters/1
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:40:33 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 15ms (Views: 12.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 14:44:16 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 41ms (Views: 29.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/houses" for ::1 at 2017-02-25 14:44:18 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 14:45:30 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/edit" for ::1 at 2017-02-25 14:45:59 -0500
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/_form.html.erb (2.2ms)
+  Rendered houses/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 18ms (Views: 16.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-25 14:46:21 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/houses/4" for ::1 at 2017-02-25 14:46:28 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 4]]
+  Rendered houses/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses/4/characters/5" for ::1 at 2017-02-25 14:46:31 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"4", "id"=>"5"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24ms (Views: 20.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/houses/4/characters/5" for ::1 at 2017-02-25 14:46:34 -0500
+Processing by CharactersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VfH7spNkFEUM+RJ6lJPqtCkLdo/hVK0ERRNyjNG6GsQqD6hNZrfc6AayaO2mqWJ6YxjpPlF04lODxX34EJvW1A==", "house_id"=>"4", "id"=>"5"}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 5]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+Redirected to http://localhost:3000/houses/4
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/houses/4" for ::1 at 2017-02-25 14:46:34 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 4]]
+  Rendered houses/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses" for ::1 at 2017-02-25 14:46:37 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/4" for ::1 at 2017-02-25 14:46:46 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 4]]
+  Rendered houses/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/4/edit" for ::1 at 2017-02-25 14:46:48 -0500
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/_form.html.erb (1.4ms)
+  Rendered houses/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/houses/4" for ::1 at 2017-02-25 14:46:50 -0500
+Processing by HousesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"neQEA8oj5dzOtrRjBZiGaiYbX5cSsam8wo7QQrPVWRF6tWc47+PHuu/20qwR6rLneuSilGPHZ6y7/7lRDIlAxA==", "house"=>{"name"=>"Lannister", "house_url"=>"https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012014/house_lannister.png?itok=6lVFuitE"}, "commit"=>"Update House", "id"=>"4"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/houses/4
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/4" for ::1 at 2017-02-25 14:46:50 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 4]]
+  Rendered houses/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses" for ::1 at 2017-02-25 14:46:53 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/4" for ::1 at 2017-02-25 14:46:55 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 4]]
+  Rendered houses/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses" for ::1 at 2017-02-25 14:46:57 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 14:46:59 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses/1/edit" for ::1 at 2017-02-25 14:47:01 -0500
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/_form.html.erb (1.4ms)
+  Rendered houses/edit.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-02-25 14:47:02 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 14:47:02 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:47:05 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 17ms (Views: 14.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/1/edit" for ::1 at 2017-02-25 14:47:06 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.3ms)
+  Rendered characters/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 24ms (Views: 21.1ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/houses/1/characters/1" for ::1 at 2017-02-25 14:47:19 -0500
+Processing by CharactersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v5lZh2+5+ee2QZUbKCkJNN9YGxeQ/+qlLTNEuVzW0FsfILh24WOYUXfr5LiF9ObXyoDBQYfjITrvwIlDfEPM9g==", "character"=>{"name"=>"That hoe over there", "character_photo"=>"http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/daenarys-1024.jpg"}, "commit"=>"Update Character", "house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "characters" SET "name" = $1 WHERE "characters"."id" = $2[0m  [["name", "That hoe over there"], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/houses/1/characters/1
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:47:19 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:47:51 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/rodneycurl/wdi/labs/got/app/views/characters/show.html.erb:6: syntax error, unexpected tIVAR, expecting ')'
+r.append=( "House:" @character.house.name );@output_buffer.s
+                              ^):
+  
+app/views/characters/show.html.erb:6: syntax error, unexpected tIVAR, expecting ')'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.2ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.0ms)
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:47:57 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 12.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:48:08 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:48:13 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 13.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:48:33 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 16ms (Views: 13.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:48:50 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 14:49:04 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2017-02-25 14:49:08 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 14:49:14 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 14:50:57 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 21ms (Views: 18.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/new" for ::1 at 2017-02-25 14:50:59 -0500
+Processing by CharactersController#new as HTML
+  Parameters: {"house_id"=>"1"}
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (92.1ms)
+  Rendered characters/new.html.erb within layouts/application (93.5ms)
+Completed 500 Internal Server Error in 99ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `characters_path' for #<#<Class:0x007fa3a13c1c38>:0x007fa3a1238fb0>):
+    1: <%= form_for [@house, @character] do |f| %>
+    2: 
+    3:   <%= f.label :name, "Character Name" %>
+    4:   <%= f.text_field :name %>
+  
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___4580653010269802316_70170379845920'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb__759750094568835041_70170379932780'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.6ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (48.6ms)
+Started GET "/houses/1/characters/new" for ::1 at 2017-02-25 14:54:11 -0500
+Processing by CharactersController#new as HTML
+  Parameters: {"house_id"=>"1"}
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (53.2ms)
+  Rendered characters/new.html.erb within layouts/application (54.5ms)
+Completed 500 Internal Server Error in 67ms (ActiveRecord: 3.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `characters_path' for #<#<Class:0x007fa3a11d2f08>:0x007fa3a11c23b0>):
+    1: <%= form_for [@house, @character] do |f| %>
+    2: 
+    3:   <%= f.label :name, "Character Name" %>
+    4:   <%= f.text_field :name %>
+  
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___4580653010269802316_70170379607580'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb__759750094568835041_70170379733880'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.2ms)
+Started GET "/houses/1/characters/new" for ::1 at 2017-02-25 14:54:40 -0500
+Processing by CharactersController#new as HTML
+  Parameters: {"house_id"=>"1"}
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (46.0ms)
+  Rendered characters/new.html.erb within layouts/application (47.3ms)
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `characters_path' for #<#<Class:0x007fa3a121b4b0>:0x007fa3a12184e0>):
+    1: <%= form_for [@house, @character] do |f| %>
+    2: 
+    3:   <%= f.label :name, "Character Name" %>
+    4:   <%= f.text_field :name %>
+  
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___4580653010269802316_70170379683880'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb__759750094568835041_70170379882140'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.7ms)
+Started GET "/houses/1/characters/new" for ::1 at 2017-02-25 15:00:51 -0500
+Processing by CharactersController#new as HTML
+  Parameters: {"house_id"=>"1"}
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (49.6ms)
+  Rendered characters/new.html.erb within layouts/application (51.0ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `characters_path' for #<#<Class:0x007fa39a7d9cc8>:0x007fa39a7d7e28>):
+    1: <%= form_for [@house, @character] do |f| %>
+    2: 
+    3:   <%= f.label :name, "Character Name" %>
+    4:   <%= f.text_field :name %>
+  
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___4580653010269802316_70170353670480'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb__759750094568835041_70170324161820'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (52.5ms)
+Started GET "/houses/1/characters/new" for ::1 at 2017-02-25 15:07:45 -0500
+Processing by CharactersController#new as HTML
+  Parameters: {"house_id"=>"1"}
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 6ms (ActiveRecord: 2.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find House with 'id'=):
+  
+app/controllers/characters_controller.rb:11:in `new'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.8ms)
+Started GET "/houses/1/characters/new" for ::1 at 2017-02-25 15:08:29 -0500
+Processing by CharactersController#new as HTML
+  Parameters: {"house_id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.6ms)
+  Rendered characters/new.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 24ms (Views: 13.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/houses/1/characters" for ::1 at 2017-02-25 15:08:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/houses/1/characters"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (3.8ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (76.9ms)
+Started GET "/houses/" for ::1 at 2017-02-25 15:08:57 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:08:59 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/1" for ::1 at 2017-02-25 15:09:02 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"1"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 41ms (Views: 37.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:09:04 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/new" for ::1 at 2017-02-25 15:09:05 -0500
+Processing by CharactersController#new as HTML
+  Parameters: {"house_id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (2.2ms)
+  Rendered characters/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:09:29 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYCoZSrfqjzKhwlJEBNV3LtIneM5zLNX4IpqDcNXxhqJSTVUY9irWRJocIaz5no9/+JRb75mFReaZMKXL75oCA==", "character"=>{"name"=>"Donald Trump", "character_photo"=>"http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"characters", :house_id=>nil, :id=>nil} missing required keys: [:house_id, :id]):
+  
+app/controllers/characters_controller.rb:18:in `create'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.9ms)
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:10:51 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WYCoZSrfqjzKhwlJEBNV3LtIneM5zLNX4IpqDcNXxhqJSTVUY9irWRJocIaz5no9/+JRb75mFReaZMKXL75oCA==", "character"=>{"name"=>"Donald Trump", "character_photo"=>"http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 4.1ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"characters", :house_id=>"1"} missing required keys: [:id]):
+  
+app/controllers/characters_controller.rb:18:in `create'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.9ms)
+Started GET "/houses/1" for ::1 at 2017-02-25 15:11:05 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (29.4ms)
+Completed 200 OK in 76ms (Views: 62.4ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:11:07 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KXwh9t+7Le0lffzG3fzwZgEXJef/+A5TYzS1SvKl1w5WgnIJKmjlQC82hlHvxnioSwS6Vk/YQQSl4ro+M4QbHg==", "character"=>{"name"=>"Donald Trump", "character_photo"=>"http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"characters", :house_id=>nil, :id=>nil} missing required keys: [:house_id, :id]):
+  
+app/controllers/characters_controller.rb:18:in `create'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.1ms)
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:11:56 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KXwh9t+7Le0lffzG3fzwZgEXJef/+A5TYzS1SvKl1w5WgnIJKmjlQC82hlHvxnioSwS6Vk/YQQSl4ro+M4QbHg==", "character"=>{"name"=>"Donald Trump", "character_photo"=>"http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"create", :controller=>"characters", :format=>#<Character id: nil, name: "Donald Trump", character_photo: "http://static4.businessinsider.com/image/56c640526...", house_id: nil>, :house_id=>nil} missing required keys: [:house_id]):
+  
+app/controllers/characters_controller.rb:18:in `create'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.1ms)
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:12:32 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KXwh9t+7Le0lffzG3fzwZgEXJef/+A5TYzS1SvKl1w5WgnIJKmjlQC82hlHvxnioSwS6Vk/YQQSl4ro+M4QbHg==", "character"=>{"name"=>"Donald Trump", "character_photo"=>"http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/houses/house_id/characters
+Completed 302 Found in 10ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/houses/house_id/characters" for ::1 at 2017-02-25 15:12:32 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/houses/house_id/characters"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (3.0ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.8ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.3ms)
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:12:48 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KXwh9t+7Le0lffzG3fzwZgEXJef/+A5TYzS1SvKl1w5WgnIJKmjlQC82hlHvxnioSwS6Vk/YQQSl4ro+M4QbHg==", "character"=>{"name"=>"Donald Trump", "character_photo"=>"http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 4.2ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"create", :controller=>"characters", :format=>#<Character id: nil, name: "Donald Trump", character_photo: "http://static4.businessinsider.com/image/56c640526...", house_id: nil>, :house_id=>nil} missing required keys: [:house_id]):
+  
+app/controllers/characters_controller.rb:18:in `create'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.9ms)
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:15:07 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KXwh9t+7Le0lffzG3fzwZgEXJef/+A5TYzS1SvKl1w5WgnIJKmjlQC82hlHvxnioSwS6Vk/YQQSl4ro+M4QbHg==", "character"=>{"name"=>"Donald Trump", "character_photo"=>"http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/houses/1/characters
+Completed 302 Found in 16ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/houses/1/characters" for ::1 at 2017-02-25 15:15:07 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/houses/1/characters"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (3.3ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (65.2ms)
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:16:38 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KXwh9t+7Le0lffzG3fzwZgEXJef/+A5TYzS1SvKl1w5WgnIJKmjlQC82hlHvxnioSwS6Vk/YQQSl4ro+M4QbHg==", "character"=>{"name"=>"Donald Trump", "character_photo"=>"http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 4.7ms)
+
+
+  
+NoMethodError (undefined method `character' for #<House:0x007fa3a099cb18>
+Did you mean?  characters
+               characters=):
+  
+app/controllers/characters_controller.rb:18:in `create'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.4ms)
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:17:15 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KXwh9t+7Le0lffzG3fzwZgEXJef/+A5TYzS1SvKl1w5WgnIJKmjlQC82hlHvxnioSwS6Vk/YQQSl4ro+M4QbHg==", "character"=>{"name"=>"Donald Trump", "character_photo"=>"http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "character_photo", "house_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Donald Trump"], ["character_photo", "http://static4.businessinsider.com/image/56c640526e97c625048b822a-480/donald-trump.jpg"], ["house_id", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/houses/1/characters.6
+Completed 302 Found in 17ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/houses/1/characters.6" for ::1 at 2017-02-25 15:17:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/houses/1/characters.6"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (4.2ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (60.2ms)
+Started GET "/houses/" for ::1 at 2017-02-25 15:18:13 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:18:16 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/6" for ::1 at 2017-02-25 15:18:19 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"6"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1/characters/new" for ::1 at 2017-02-25 15:18:29 -0500
+Processing by CharactersController#new as HTML
+  Parameters: {"house_id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+
+
+  
+NoMethodError (undefined method `character' for #<House:0x007fa3a0ad8c70>
+Did you mean?  characters
+               characters=):
+  
+app/controllers/characters_controller.rb:12:in `new'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.5ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (49.9ms)
+Started GET "/houses/1" for ::1 at 2017-02-25 15:19:10 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 76ms (Views: 52.3ms | ActiveRecord: 6.6ms)
+
+
+Started GET "/houses/1/characters/new" for ::1 at 2017-02-25 15:19:12 -0500
+Processing by CharactersController#new as HTML
+  Parameters: {"house_id"=>"1"}
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (2.0ms)
+  Rendered characters/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 26ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:20:00 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lhNZf8HaMjmzcV0mFavtXNq/I5LEW3R+wJEFPkVYcgRG2sROiN0zXGueJOm2XsK9nhXvHkPx0j66f62kqbHcFg==", "character"=>{"name"=>"Dumb Donald Trump", "character_photo"=>"https://donaldjdumb.com/wp-content/uploads/2016/05/tongue.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[36mHouse Load (0.8ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "characters" ("name", "character_photo", "house_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Dumb Donald Trump"], ["character_photo", "https://donaldjdumb.com/wp-content/uploads/2016/05/tongue.jpg"], ["house_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/houses/1/characters.7
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/houses/1/characters.7" for ::1 at 2017-02-25 15:20:00 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/houses/1/characters.7"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered collection of /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (3.7ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (63.7ms)
+Started GET "/houses/1/characters.7" for ::1 at 2017-02-25 15:20:27 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/houses/1/characters.7"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered collection of /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (3.4ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (62.3ms)
+Started GET "/houses/1" for ::1 at 2017-02-25 15:20:31 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 53ms (Views: 34.4ms | ActiveRecord: 10.1ms)
+
+
+Started GET "/houses/1/characters/7" for ::1 at 2017-02-25 15:20:32 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"7"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24ms (Views: 19.8ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/houses/1/characters/7" for ::1 at 2017-02-25 15:20:37 -0500
+Processing by CharactersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SSwwKhS9jNGDkDU2u0SDkrZEwm+FI2tez+fTX4ZLZt020mPV4W5EfInbT6GJfgtc/Fdd3jUDJAkJMdwrR2qqzQ==", "house_id"=>"1", "id"=>"7"}
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 7]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/houses/1
+Completed 302 Found in 5ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:20:37 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.7ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.6ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 16ms (Views: 13.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/houses/1/characters/new" for ::1 at 2017-02-25 15:20:42 -0500
+Processing by CharactersController#new as HTML
+  Parameters: {"house_id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.2ms)
+  Rendered characters/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 23ms (Views: 19.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:20:49 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WJRwtbctmU293RmhdlnYti1PCc1mgPf0IrGNlcG8ZHuIXe2E/iqYKGUyYG7VrPdXaeXFQeEqUbRYXyUPLVXKaQ==", "character"=>{"name"=>"Dumb Donald Trump", "character_photo"=>"https://donaldjdumb.com/wp-content/uploads/2016/05/tongue.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "characters" ("name", "character_photo", "house_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Dumb Donald Trump"], ["character_photo", "https://donaldjdumb.com/wp-content/uploads/2016/05/tongue.jpg"], ["house_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/houses/1/characters.8
+Completed 302 Found in 5ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/houses/1/characters.8" for ::1 at 2017-02-25 15:20:50 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/houses/1/characters.8"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (11.1ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (76.3ms)
+Started GET "/houses/1" for ::1 at 2017-02-25 15:21:27 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 76ms (Views: 66.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/8" for ::1 at 2017-02-25 15:21:29 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"8"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 23ms (Views: 19.9ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/houses/1/characters/8" for ::1 at 2017-02-25 15:21:30 -0500
+Processing by CharactersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0m371F19trkGhouOWQRln+y8BC8gusPp/wcNPWjp/W6tk6grqK5+FAzN8RlrPu1Rpq+bnpCajL450QJJqcgxfg==", "house_id"=>"1", "id"=>"8"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 8]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/houses/1
+Completed 302 Found in 4ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:21:30 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 17ms (Views: 15.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/new" for ::1 at 2017-02-25 15:21:32 -0500
+Processing by CharactersController#new as HTML
+  Parameters: {"house_id"=>"1"}
+  [1m[36mHouse Load (0.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.3ms)
+  Rendered characters/new.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 23ms (Views: 18.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:21:38 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/mcMWSo5foN8hYI1lzaiMPSUdmSuTEa8WWDi+ajij58urpFoYz5/5qRq+/o0w43RsD666Cnm4PwjjkpjRAshjQ==", "character"=>{"name"=>"Dumb Donald Trump", "character_photo"=>"https://donaldjdumb.com/wp-content/uploads/2016/05/tongue.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "character_photo", "house_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Dumb Donald Trump"], ["character_photo", "https://donaldjdumb.com/wp-content/uploads/2016/05/tongue.jpg"], ["house_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/houses/1/characters.9
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/houses/1/characters.9" for ::1 at 2017-02-25 15:21:38 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/houses/1/characters.9"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.1) lib/puma/configuration.rb:232:in `call'
+puma (3.7.1) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.1) lib/puma/server.rb:415:in `process_client'
+puma (3.7.1) lib/puma/server.rb:275:in `block in run'
+puma (3.7.1) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered collection of /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [16 times] (3.6ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.5ms)
+Started POST "/houses/1/characters" for ::1 at 2017-02-25 15:22:28 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RCU918i65DJx/N0ZXiEhmWYSAYOnAFwwPT7ktjSxyM87224oPWksn3u3p45sG6lXLAGeMhcgE2f76OvC9ZAE3w==", "character"=>{"name"=>"Dumb Donald Trump ii", "character_photo"=>"https://donaldjdumb.com/wp-content/uploads/2016/05/tongue.jpg"}, "commit"=>"Create Character", "house_id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "characters" ("name", "character_photo", "house_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Dumb Donald Trump ii"], ["character_photo", "https://donaldjdumb.com/wp-content/uploads/2016/05/tongue.jpg"], ["house_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/houses/1/characters/10
+Completed 302 Found in 13ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/houses/1/characters/10" for ::1 at 2017-02-25 15:22:28 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"10"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:22:37 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses" for ::1 at 2017-02-25 15:22:38 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:22:41 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/houses/1/characters/10" for ::1 at 2017-02-25 15:22:44 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"10"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 29ms (Views: 26.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/houses/1/characters/10" for ::1 at 2017-02-25 15:22:45 -0500
+Processing by CharactersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NZcMG4KQlYCD847yWEfqahQBKyqFBP+TKplLcQoaLGNKaV/kd0NdLYm49GVqfWKkXhK0mzUksMTsT0QFyzvgcw==", "house_id"=>"1", "id"=>"10"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 10]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/houses/1
+Completed 302 Found in 3ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:22:45 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1/characters/9" for ::1 at 2017-02-25 15:22:48 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"9"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses/1/characters/9/edit" for ::1 at 2017-02-25 15:22:49 -0500
+Processing by CharactersController#edit as HTML
+  Parameters: {"house_id"=>"1", "id"=>"9"}
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (1.3ms)
+  Rendered characters/edit.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 23ms (Views: 20.2ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/houses/1/characters/9" for ::1 at 2017-02-25 15:22:57 -0500
+Processing by CharactersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kpICTeWt2Y048p9uplJ8/3VoHWtt7+6cwZVqgFxHxcjgcK42cDnFA+N+P/v3Lx2Pd30vllhRavwSrXJIyFF1Cw==", "character"=>{"name"=>"GRAB EM BY THE PUSSY", "character_photo"=>"https://donaldjdumb.com/wp-content/uploads/2016/05/tongue.jpg"}, "commit"=>"Update Character", "house_id"=>"1", "id"=>"9"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "characters" SET "name" = $1 WHERE "characters"."id" = $2[0m  [["name", "GRAB EM BY THE PUSSY"], ["id", 9]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/houses/1/characters/9
+Completed 302 Found in 5ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/houses/1/characters/9" for ::1 at 2017-02-25 15:22:57 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"9"}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:23:08 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/houses/1/characters/9" for ::1 at 2017-02-25 15:23:10 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"9"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered characters/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/houses/1/characters/9" for ::1 at 2017-02-25 15:23:11 -0500
+Processing by CharactersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZFKl0dKrFQtLwoF2tZHgntN9A4Kj5YBZQEi7Bau5fPYbrPYuJ3jdpkGJ++GHq2hQmW6cMxPFzw6GnrRxapiw5g==", "house_id"=>"1", "id"=>"9"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = $1[0m  [["id", 9]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/houses/1
+Completed 302 Found in 4ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:23:11 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:24:19 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses/1/characters/9" for ::1 at 2017-02-25 15:24:30 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"house_id"=>"1", "id"=>"9"}
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Character with 'id'=9):
+  
+app/controllers/characters_controller.rb:24:in `show'
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/rodneycurl/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (48.6ms)
+Started GET "/houses" for ::1 at 2017-02-25 15:24:39 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/2" for ::1 at 2017-02-25 15:24:45 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 2]]
+  Rendered houses/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses/3" for ::1 at 2017-02-25 15:24:48 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 3]]
+  Rendered houses/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/4" for ::1 at 2017-02-25 15:24:51 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 4]]
+  Rendered houses/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:24:56 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:25:48 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.4ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/houses/1/edit" for ::1 at 2017-02-25 15:25:52 -0500
+Processing by HousesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/edit.html.erb within layouts/application
+  Rendered houses/_form.html.erb (2.0ms)
+  Rendered houses/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/houses/1" for ::1 at 2017-02-25 15:25:58 -0500
+Processing by HousesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m7T+ByQlfBGg3aarbEGPdggQtlBhcFFVzgcj3a39hVMiDXee0v4O3r+K+uj49ZfW/7dnTp1RSlRcc7WKHWQeEQ==", "house"=>{"name"=>"Targaryen", "house_url"=>"http://vignette1.wikia.nocookie.net/gameofthrones/images/1/16/House-Targaryen-heraldry.jpg/revision/latest?cb=20151004105028"}, "commit"=>"Update House", "id"=>"1"}
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "houses" SET "house_url" = $1 WHERE "houses"."id" = $2[0m  [["house_url", "http://vignette1.wikia.nocookie.net/gameofthrones/images/1/16/House-Targaryen-heraldry.jpg/revision/latest?cb=20151004105028"], ["id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/houses/1
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:25:58 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.1ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.2ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", :environment]]
+  [1m[35m (121.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "got_development"[0m
+  [1m[35m (123.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "got_test"[0m
+  [1m[35m (249.3ms)[0m  [1m[35mCREATE DATABASE "got_development" ENCODING = 'unicode'[0m
+  [1m[35m (239.4ms)[0m  [1m[35mCREATE DATABASE "got_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE TABLE "characters" ("id" serial primary key, "name" character varying, "character_photo" character varying, "house_id" integer)[0m
+  [1m[35m (4.3ms)[0m  [1m[35mCREATE TABLE "houses" ("id" serial primary key, "name" character varying, "house_url" character varying)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170224190459')[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170224171057');
+
+[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-25 20:26:39 UTC], ["updated_at", 2017-02-25 20:26:39 UTC]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (8.5ms)[0m  [1m[35mCREATE TABLE "characters" ("id" serial primary key, "name" character varying, "character_photo" character varying, "house_id" integer)[0m
+  [1m[35m (3.7ms)[0m  [1m[35mCREATE TABLE "houses" ("id" serial primary key, "name" character varying, "house_url" character varying)[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20170224190459')[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES
+('20170224171057');
+
+[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-25 20:26:39 UTC], ["updated_at", 2017-02-25 20:26:39 UTC]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "houses" ("name", "house_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Targaryen"], ["house_url", "http://vignette1.wikia.nocookie.net/gameofthrones/images/1/16/House-Targaryen-heraldry.jpg/revision/latest?cb=20151004105028"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "houses" ("name", "house_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Night's Watch"], ["house_url", "http://static.cdn.ea.com/battlelog/prod/emblems/320/717/bf3/2832655391748020717.jpeg?v=1346877342"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "houses" ("name", "house_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Stark"], ["house_url", "https://s-media-cache-ak0.pinimg.com/736x/4a/bc/38/4abc38758eba60d6712bd86dd1542697.jpg"]]
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "houses" ("name", "house_url") VALUES ($1, $2) RETURNING "id"[0m  [["name", "Lannister"], ["house_url", "https://www.brandsoftheworld.com/sites/default/files/styles/logo-thumbnail/public/012014/house_lannister.png?itok=6lVFuitE"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "characters" ("name", "character_photo", "house_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Daenerys Targaryen"], ["character_photo", "http://i.lv3.hbo.com/assets/images/series/game-of-thrones/character/s5/daenarys-1024.jpg"], ["house_id", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "characters" ("name", "character_photo", "house_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Jon Snow"], ["character_photo", "https://blogs-images.forbes.com/insertcoin/files/2015/01/thrones2.jpg"], ["house_id", 2]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "characters" ("name", "character_photo", "house_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Arya Stark"], ["character_photo", "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/04/27/08/22-sansa-stark.w1200.h630.jpg"], ["house_id", 3]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "characters" ("name", "character_photo", "house_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Sansa Stark"], ["character_photo", "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/04/27/08/22-sansa-stark.w1200.h630.jpg"], ["house_id", 3]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "characters" ("name", "character_photo", "house_id") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "Tyrion Lannister"], ["character_photo", "http://i.telegraph.co.uk/multimedia/archive/03295/Tyrion_1_3295189b.jpg"], ["house_id", 4]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2017-02-25 15:26:57 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.5ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 172ms (Views: 155.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/houses/1" for ::1 at 2017-02-25 15:27:00 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mHouse Load (0.5ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 1]]
+  Rendered houses/show.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 101ms (Views: 85.3ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/houses" for ::1 at 2017-02-25 15:27:03 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/houses/2" for ::1 at 2017-02-25 15:27:04 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 2]]
+  Rendered houses/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses" for ::1 at 2017-02-25 15:27:05 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/houses/2" for ::1 at 2017-02-25 15:27:07 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 2]]
+  Rendered houses/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 20ms (Views: 16.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/houses" for ::1 at 2017-02-25 15:27:08 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/houses/3" for ::1 at 2017-02-25 15:27:09 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 3]]
+  Rendered houses/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses" for ::1 at 2017-02-25 15:27:11 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/houses/4" for ::1 at 2017-02-25 15:27:12 -0500
+Processing by HousesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mHouse Load (0.3ms)[0m  [1m[34mSELECT  "houses".* FROM "houses" WHERE "houses"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering houses/show.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters" WHERE "characters"."house_id" = $1[0m  [["house_id", 4]]
+  Rendered houses/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/houses" for ::1 at 2017-02-25 15:27:13 -0500
+Processing by HousesController#index as HTML
+  Rendering houses/index.html.erb within layouts/application
+  [1m[36mHouse Load (0.2ms)[0m  [1m[34mSELECT "houses".* FROM "houses"[0m
+  Rendered houses/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.2ms)
+
+
