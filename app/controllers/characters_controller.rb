@@ -1,5 +1,5 @@
 class CharactersController < ApplicationController
-  before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
+  # before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destroy]
 
   # index
   def index
@@ -20,6 +20,7 @@ class CharactersController < ApplicationController
   #show
   def show
     @character = Character.find(params[:id])
+    @house = House.find(@character.house_id)
   end
 
   # edit

@@ -1,4 +1,7 @@
 <h2><%= @character.name %></h2>
+<%= link_to 'Back', house_path(@house) %>
+<%= link_to 'Edit', edit_house_character_path(@house, @character) %>
+<%= link_to 'Delete', [@house, @character], method: :delete %>
 <br>
 <h3><%= @character.house.name %></h3>
 <img src="<%= @character.character_photo %>" >
